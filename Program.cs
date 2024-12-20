@@ -68,6 +68,10 @@ namespace FormatException
             {
                 Console.WriteLine(ex.Message);
             }
+            catch (Exeption ex)
+            {
+                Console.WriteLine("Сталася непередбачена помилка: " + ex.Message);
+            }    
 
             Console.WriteLine("Натисніть будь-яку клавішу для завершення програми...");
             Console.ReadKey();
